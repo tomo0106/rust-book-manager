@@ -78,7 +78,7 @@ async fn health_check_works() {
 }
 
 #[sqlx::test]
-async fn health_check_db_works(pool: sqlx::PgPool){
+async fn health_check_db_works(pool: sqlx::PgPool) {
     let status_code = health_check_db(State(pool)).await;
     assert_eq!(status_code, StatusCode::OK);
 }
