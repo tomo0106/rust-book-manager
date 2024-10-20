@@ -5,10 +5,6 @@ use axum::{extract::State, http::StatusCode, routing::get, Router};
 use sqlx::{postgres::PgConnectOptions, PgPool};
 use tokio::net::TcpListener;
 
-async fn hello_world() -> &'static str {
-    "Hello, world!"
-}
-
 pub async fn health_check() -> StatusCode {
     StatusCode::OK
 }
