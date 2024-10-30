@@ -6,7 +6,6 @@ version = 3
 name = "adapter"
 version = "0.1.0"
 dependencies = [
- "anyhow",
  "async-trait",
  "derive-new",
  "kernel",
@@ -1143,11 +1142,9 @@ dependencies = [
  "adapter",
  "anyhow",
  "api",
- "async-trait",
  "axum",
  "registry",
  "shared",
- "sqlx",
  "tokio",
 ]
 
